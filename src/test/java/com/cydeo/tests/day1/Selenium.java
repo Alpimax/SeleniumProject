@@ -13,7 +13,7 @@ public class Selenium {
         WebDriver driver = new ChromeDriver();
 //        polymorphism
         driver.get("https://www.tesla.com/");
-
+//        get for website.
 
 // test case created.
 
