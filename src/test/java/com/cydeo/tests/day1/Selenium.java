@@ -9,7 +9,9 @@ import org.openqa.selenium.safari.SafariDriver;
 public class Selenium {
     public static void main(String[] args) {
         WebDriverManager.chromedriver().setup();
+//         for setup
         WebDriver driver = new ChromeDriver();
+//        polymorphism
         driver.get("https://www.tesla.com/");
 
 
