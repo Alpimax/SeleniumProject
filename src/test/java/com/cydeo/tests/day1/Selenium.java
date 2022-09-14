@@ -12,5 +12,8 @@ public class Selenium {
         WebDriver driver = new ChromeDriver();
         driver.get("https://www.tesla.com/");
 
+
+// test case created.
+
     }
 }
