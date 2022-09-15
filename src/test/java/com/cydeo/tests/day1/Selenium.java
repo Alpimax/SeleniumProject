@@ -9,9 +9,9 @@ import org.openqa.selenium.safari.SafariDriver;
 
 public class Selenium {
     public static void main(String[] args) throws InterruptedException {
-        WebDriverManager
+        WebDriverManager.safaridriver().setup();
 //         for setup
-        WebDriver driver = new ChromeDriver();
+        WebDriver driver = new SafariDriver();
 //        polymorphism
         driver.get("www.google.com/");
 //        get for website.
