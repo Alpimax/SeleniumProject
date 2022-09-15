@@ -9,7 +9,7 @@ import org.openqa.selenium.safari.SafariDriver;
 
 public class Selenium {
     public static void main(String[] args) throws InterruptedException {
-        WebDriverManager.
+        WebDriverManager
 //         for setup
         WebDriver driver = new ChromeDriver();
 //        polymorphism
