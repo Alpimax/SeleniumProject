@@ -27,6 +27,7 @@ public class Selenium {
         Thread.sleep(2000);
         driver.navigate().back();
         Thread.sleep(1000);
+
         driver.navigate().forward();
         Thread.sleep(1000);
         driver.navigate().refresh();
