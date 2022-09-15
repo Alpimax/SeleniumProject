@@ -16,7 +16,7 @@ public class Cydeo {
            driver.get("https://www.cydeo.com");
             String tittle = driver.getTitle();
             if(tittle.equals("Cydeo")){
-                arr[i] = "Passed " + i;
+                arr[i] = "Passed " + (i +1);
             }
             driver.quit();
         }
@@ -24,4 +24,30 @@ public class Cydeo {
             System.out.println(each);
         }
     }
+
+
+
+//    a+b = 10
+//    a = 10-b
+//    b = 10-a
+
+
+//     5+3 = 8
+//     5 = 8-3
+//     3 = 8-5
+
+//    2 + x = 12  ?
+
+
+//    x = 12 - 2
+
+
+
+
+
+
+
+
+
+
 }
