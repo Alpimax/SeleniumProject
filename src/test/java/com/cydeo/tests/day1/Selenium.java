@@ -19,7 +19,10 @@ public class Selenium {
         Thread.sleep(1000);
         driver.findElement(By.className("gNO89b")).click();
         Thread.sleep(1000);
-        driver.findElement(By.className("LC20lb MBeuO DKV0Md")).click();
+        driver.navigate().back();
+        Thread.sleep(1000);
+        driver.navigate().forward();
+
 // test case created.
 
     }
