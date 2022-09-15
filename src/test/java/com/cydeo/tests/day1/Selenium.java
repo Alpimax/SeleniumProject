@@ -9,11 +9,11 @@ import org.openqa.selenium.safari.SafariDriver;
 
 public class Selenium {
     public static void main(String[] args) throws InterruptedException {
-        WebDriverManager.safaridriver().setup();
+        WebDriverManager.chromiumdriver().setup();
 //         for setup
-        WebDriver driver = new SafariDriver();
+        WebDriver driver = new ChromeDriver();
 //        polymorphism
-        driver.get("www.google.com/");
+        driver.get("https://www.google.com/?client=safari");
 //        get for website.
         driver.findElement(By.name("q")).sendKeys("mkaraas");
         Thread.sleep(1000);
