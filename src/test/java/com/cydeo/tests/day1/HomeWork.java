@@ -10,6 +10,8 @@ public class HomeWork {
         String[] arrUrl = new String[10];
         String[] arrTitle = new String[10];
 
+
+
         for (int i = 0; i < 10; i++) {
             WebDriverManager.chromiumdriver().setup();
             WebDriver driver = new ChromeDriver();
