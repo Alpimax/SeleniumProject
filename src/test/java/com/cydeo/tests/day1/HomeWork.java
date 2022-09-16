@@ -12,6 +12,7 @@ public class HomeWork {
 
 
 
+
         for (int i = 0; i < 10; i++) {
             WebDriverManager.chromiumdriver().setup();
             WebDriver driver = new ChromeDriver();
@@ -20,7 +21,7 @@ public class HomeWork {
             driver.get("https://practice.cydeo.com");
 
             String currentlyURL = driver.getCurrentUrl();
-            if (currentlyURL.contains("Cydeo")) {
+            if (currentlyURL.contains("cydeo")) {
                 arrUrl[i] = "Passed   " + (i + 1);
             } else {
                 arrUrl[i] = "Failed " + (i + 1);
