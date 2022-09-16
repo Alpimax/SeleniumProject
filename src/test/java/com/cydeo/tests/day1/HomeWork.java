@@ -33,6 +33,7 @@ public class HomeWork {
             }
             driver.quit();
         }
+
         System.out.println( "For this one URL ");
         for (String each : arrUrl) {
             System.out.println(each);
