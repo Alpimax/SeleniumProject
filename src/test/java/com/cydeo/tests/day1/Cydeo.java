@@ -1,4 +1,4 @@
-package com.cydeo.tests.day2;
+package com.cydeo.tests.day1;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
@@ -7,16 +7,18 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class Cydeo {
 
     public static void main(String[] args) {
-        String [] arr =new  String [5];
-        for (int i = 0; i < 5; i++) {
+        String [] arr =new  String [10];
+        for (int i = 0; i < 10; i++) {
             WebDriverManager.chromiumdriver().setup();
             WebDriver driver = new ChromeDriver();
            driver.manage().window().maximize();
 
            driver.get("https://www.cydeo.com");
-            String tittle = driver.getTitle();
-            if(tittle.equals("Cydeo")){
-                arr[i] = "Passed " + (i +1);
+            String title = driver.getTitle();
+            if(title.equals("Cydeo")){
+                arr[i] = "Passed " + (i +1) ;
+            }else{
+                arr[i] = "Failed " + (i +1);
             }
             driver.quit();
         }
@@ -24,25 +26,6 @@ public class Cydeo {
             System.out.println(each);
         }
     }
-
-
-
-//    a+b = 10
-//    a = 10-b
-//    b = 10-a
-
-
-//     5+3 = 8
-//     5 = 8-3
-//     3 = 8-5
-
-//    2 + x = 12  ?
-
-
-//    x = 12 - 2
-
-
-
 
 
 
