@@ -17,12 +17,11 @@ public class MultipleBrowser {
         WebDriverManager.firefoxdriver().setup();
         WebDriverManager.edgedriver().setup();
         WebDriverManager.chromedriver().setup();
-        WebDriverManager.safaridriver().setup();
 
     WebDriver driver1= new ChromeDriver();
     WebDriver driver2= new EdgeDriver();
     WebDriver driver3= new FirefoxDriver();
-    WebDriver driver4= new SafariDriver();
+
     ArrayList<WebDriver> arrL= new ArrayList<>(Arrays.asList(driver1,driver2,driver3,driver4));
     String expectedUrl="cydeo";
     String expectedTitle="Practice";
