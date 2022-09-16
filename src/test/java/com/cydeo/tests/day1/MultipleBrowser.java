@@ -22,17 +22,17 @@ public class MultipleBrowser {
     WebDriver driver2= new EdgeDriver();
     WebDriver driver3= new FirefoxDriver();
 
-    ArrayList<WebDriver> arrL= new ArrayList<>(Arrays.asList(driver1,driver2,driver3,driver4));
+    WebDriver [] arr= {driver1,driver2,driver3};
     String expectedUrl="cydeo";
     String expectedTitle="Practice";
 
-        for (WebDriver each: arrL) {
+        for (WebDriver each: arr) {
         each.manage().window().maximize();
         each.get("https://practice.cydeo.com");
         String currentUrl = each.getCurrentUrl();
 
         if (currentUrl.contains(expectedUrl)) {
-            System.out.println("Current url in :" + each + " is the same as expected url, TC PASS");
+            System.out.println("Current url in : is the same as expected url, TC PASS");
         } else System.out.println("Current url in :" + each + " is not the same as expected url, TC FAIL");
 
         String currentTitle = each.getTitle();
