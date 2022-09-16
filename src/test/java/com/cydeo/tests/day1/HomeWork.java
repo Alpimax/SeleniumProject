@@ -37,9 +37,11 @@ public class HomeWork {
         for (String each : arrUrl) {
             System.out.println(each);
         }
+
         System.out.println( "For this one Title ");
         for (String each2 : arrTitle) {
             System.out.println(each2);
         }
+
     }
 }
