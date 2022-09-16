@@ -13,7 +13,7 @@ public class HomeWork {
             WebDriver driver = new ChromeDriver();
             driver.manage().window().maximize();
 
-            driver.get("https://practice.cydeo.com ");
+            driver.get("https://practice.cydeo.com");
 
             String currentlyURL = driver.getCurrentUrl();
             if (currentlyURL.contains("Cydeo")) {
@@ -34,6 +34,7 @@ public class HomeWork {
         for (String each : arrUrl) {
             System.out.println(each);
         }
+        System.out.println( "For this one URL ");
         for (String each : arrTitle) {
             System.out.println(each);
         }
