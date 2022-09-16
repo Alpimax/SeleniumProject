@@ -1,8 +1,10 @@
 package com.cydeo.tests.day1;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
+
+
 public class HomeWork {
     public static void main(String[] args) {
         String[] arrUrl = new String[10];
@@ -27,17 +29,15 @@ public class HomeWork {
             }else {
                 arrTitle[i] = "Failed " + (i + 1);
             }
-
             driver.quit();
         }
         System.out.println( "For this one URL ");
         for (String each : arrUrl) {
             System.out.println(each);
         }
-        System.out.println( "For this one URL ");
-        for (String each : arrTitle) {
-            System.out.println(each);
+        System.out.println( "For this one Title ");
+        for (String each2 : arrTitle) {
+            System.out.println(each2);
         }
     }
-
 }
