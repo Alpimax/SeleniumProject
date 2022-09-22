@@ -11,8 +11,6 @@ public class HomeWork {
         String[] arrTitle = new String[10];
 
 
-
-
         for (int i = 0; i < 10; i++) {
             WebDriverManager.chromiumdriver().setup();
             WebDriver driver = new ChromeDriver();
@@ -29,18 +27,18 @@ public class HomeWork {
             String title = driver.getTitle();
             if (title.equals("Practice")) {
                 arrTitle[i] = "Passed   " + (i + 1);
-            }else {
+            } else {
                 arrTitle[i] = "Failed " + (i + 1);
             }
             driver.quit();
         }
 
-        System.out.println( "For this one URL ");
+        System.out.println("For this one URL ");
         for (String each : arrUrl) {
             System.out.println(each);
         }
 
-        System.out.println( "For this one Title ");
+        System.out.println("For this one Title ");
         for (String each2 : arrTitle) {
             System.out.println(each2);
         }
