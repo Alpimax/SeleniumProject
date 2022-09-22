@@ -18,6 +18,14 @@ public class T1Locators {
         WebElement inputUserName = driver.findElement(By.name("USER_LOGIN"));
         inputUserName.sendKeys("incorrect");
 //      4- Enter incorrect password: "incorrect"
-//        mac : option
+//        mac : option + enter
+//        windows : alt + enter
+        WebElement user_password = driver.findElement(By.name("USER_PASSWORD"));
+        user_password.sendKeys("incorrect");
+//        5 - Click to Login button
+        WebElement loginBtn = driver.findElement(By.className("login-btn"));
+        loginBtn.click();
+//        6- Verify error message text is as expected:
+//        expected :
     }
 }
