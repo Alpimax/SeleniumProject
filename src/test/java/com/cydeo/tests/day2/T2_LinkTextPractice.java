@@ -1,7 +1,6 @@
 package com.cydeo.tests.day2;
 
 
-
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -15,6 +14,7 @@ public class T2_LinkTextPractice {
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
+
 
         //2- Go to: https://practice.cydeo.com
         driver.get("https://practice.cydeo.com");
@@ -30,9 +30,9 @@ public class T2_LinkTextPractice {
         String expectedTitle = "No A/B Test";
         String actualTitle = driver.getTitle();
 
-        if(actualTitle.equals(expectedTitle)){
+        if (actualTitle.equals(expectedTitle)) {
             System.out.println("No A/B test title verification passed!");
-        }else{
+        } else {
             System.out.println("No A/B test title verification failed!");
         }
 
@@ -44,9 +44,9 @@ public class T2_LinkTextPractice {
         expectedTitle = "Practice";
         actualTitle = driver.getTitle();
 
-        if(actualTitle.equals(expectedTitle)){
+        if (actualTitle.equals(expectedTitle)) {
             System.out.println("Practice page title verification passed!");
-        }else{
+        } else {
             System.out.println("Practice page title verification failed!");
         }
 
