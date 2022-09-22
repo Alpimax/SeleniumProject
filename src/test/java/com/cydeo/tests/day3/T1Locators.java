@@ -26,6 +26,8 @@ public class T1Locators {
         WebElement loginBtn = driver.findElement(By.className("login-btn"));
         loginBtn.click();
 //        6- Verify error message text is as expected:
-//        expected :
+//        expected : Incorrect  login or password
+        WebElement errorMessage = driver.findElement(By.className("errortext"));
+
     }
 }
