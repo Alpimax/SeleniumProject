@@ -41,6 +41,7 @@ public class MultipleBrowser {
                     System.out.println("Current title in :" + each + " is NOT the same as expected title Practice, TC FAIL");
 
 
+
                 each.quit();
             }
         }
