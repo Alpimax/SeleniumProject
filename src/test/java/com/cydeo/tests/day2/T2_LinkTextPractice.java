@@ -15,8 +15,6 @@ public class T2_LinkTextPractice {
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
 
-
-
         //2- Go to: https://practice.cydeo.com
         driver.get("https://practice.cydeo.com");
 
