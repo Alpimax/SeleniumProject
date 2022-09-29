@@ -17,6 +17,8 @@ public class testng {
     WebElement hockeyButton = driver.findElement(By.xpath("//input[@id='football']"));
     hockeyButton.click();
 
+
+    driver.quit();
     }
 
 }
