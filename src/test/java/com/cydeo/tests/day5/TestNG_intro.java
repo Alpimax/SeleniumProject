@@ -12,6 +12,7 @@ public class TestNG_intro {
 
     @Test
     public void test2() {
+        System.out.println("Test two is running!!!");
 
     }
 }
