@@ -10,7 +10,7 @@ public class TestNG_intro {
     }
 
     @Test (priority = 2)
-    public void mytest2(){
+    public void myTest2(){
         System.out.println("test2 is running...");
     }
 
