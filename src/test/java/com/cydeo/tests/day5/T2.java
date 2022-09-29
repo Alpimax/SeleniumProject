@@ -12,6 +12,7 @@ public class T2 {
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
+
         //2. Go to https://practice.cydeo.com/add_remove_elements/
         driver.get("https://practice.cydeo.com/add_remove_elements/");
 
