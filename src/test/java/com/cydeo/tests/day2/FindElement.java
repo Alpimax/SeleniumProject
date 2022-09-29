@@ -17,9 +17,9 @@ public class FindElement {
 
         String text = obj.getAttribute("value");
 
-        if(text.equals("I'm Feeling Lucky")){
+        if (text.equals("I'm Feeling Lucky")) {
             System.out.println("Passed");
-        }else
+        } else
             System.out.println("Failed");
 
         driver.quit();

@@ -1,7 +1,6 @@
 package com.cydeo.tests.day2;
 
 
-
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -22,9 +21,9 @@ public class CarInsuranceAppVerification {
         String expectedURL = "excelsoirinsurance"; // comes from requirement
         String actualURL = driver.getCurrentUrl();  // comes from browser
 
-        if(actualURL.contains(expectedURL)){
+        if (actualURL.contains(expectedURL)) {
             System.out.println("URL verification is PASSED!");
-        }else{
+        } else {
             System.out.println("URL verification is FAILED!");
         }
 
@@ -32,9 +31,9 @@ public class CarInsuranceAppVerification {
         String expectedTitle = "Login | Excelsoir Insurance";
         String actualTitle = driver.getTitle();
 
-        if(actualTitle.equals(expectedTitle)){
+        if (actualTitle.equals(expectedTitle)) {
             System.out.println("Title verification is passed!");
-        }else{
+        } else {
             System.out.println("Title verification is failed!");
         }
 
