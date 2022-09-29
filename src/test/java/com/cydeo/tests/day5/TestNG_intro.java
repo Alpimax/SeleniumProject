@@ -6,8 +6,12 @@ public class TestNG_intro {
 
 
     @Test
-    public void test1(){
-
+    public void test1() {
+        System.out.println("Test one is running!!!");
     }
 
+    @Test
+    public void test2() {
+
+    }
 }
