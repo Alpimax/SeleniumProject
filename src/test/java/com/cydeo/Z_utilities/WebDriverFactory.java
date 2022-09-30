@@ -7,6 +7,8 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
 
+import java.util.concurrent.TimeUnit;
+
 import static com.cydeo.Z_utilities.WebDriverFactory.getDriver;
 
 public class WebDriverFactory {
@@ -34,7 +36,15 @@ public class WebDriverFactory {
         }
     }
 
+    public static WebDriver time (WebDriver driver){
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 
+        return driver;
+    }
+    public static WebDriver max(WebDriver driver){
+        driver.manage().window().maximize();
+        return driver;
+    }
 
 
 }
