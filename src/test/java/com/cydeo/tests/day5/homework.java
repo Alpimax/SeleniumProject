@@ -1,6 +1,7 @@
 package com.cydeo.tests.day5;
 
 import com.cydeo.Z_utilities.WebDriverFactory;
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.Select;
@@ -40,6 +41,7 @@ public class homework {
         String expected = "California";
         String actual =select.getFirstSelectedOption().getText();
         Assert.assertEquals(actual,expected);
+
     }
     @AfterMethod
     public void closeWeb(){
