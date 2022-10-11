@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.opera.OperaDriver;
 import org.openqa.selenium.safari.SafariDriver;
 
 import java.util.concurrent.TimeUnit;
@@ -19,9 +20,8 @@ public class WebDriverFactory {
                 return new ChromeDriver();
             }
             case "Opera": {
-                WebDriverManager.firefoxdriver().setup();
-                return new FirefoxDriver();
-
+                WebDriverManager.operadriver().setup();
+                return new OperaDriver();
             }
             case "firefox": {
                 WebDriverManager.firefoxdriver().setup();
