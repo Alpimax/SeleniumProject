@@ -18,6 +18,11 @@ public class WebDriverFactory {
                 WebDriverManager.chromedriver().setup();
                 return new ChromeDriver();
             }
+            case "Opera": {
+                WebDriverManager.firefoxdriver().setup();
+                return new FirefoxDriver();
+
+            }
             case "firefox": {
                 WebDriverManager.firefoxdriver().setup();
                 return new FirefoxDriver();
@@ -26,7 +31,7 @@ public class WebDriverFactory {
                 WebDriverManager.edgedriver().setup();
                 return new EdgeDriver();
             }
-            case"safari": {
+            case "safari": {
                 WebDriverManager.safaridriver().setup();
                 return new SafariDriver();
             }
@@ -36,12 +41,13 @@ public class WebDriverFactory {
         }
     }
 
-    public static WebDriver time (WebDriver driver){
+    public static WebDriver time(WebDriver driver) {
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 
         return driver;
     }
-    public static WebDriver max(WebDriver driver){
+
+    public static WebDriver max(WebDriver driver) {
         driver.manage().window().maximize();
         return driver;
     }
