@@ -14,7 +14,7 @@ public abstract class TestBase {
 
     @BeforeMethod
     public void setUp() {
-        driver = WebDriverFactory.getDriver(browser);
+        driver = WebDriverFactory.getDriver("chrome");
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
