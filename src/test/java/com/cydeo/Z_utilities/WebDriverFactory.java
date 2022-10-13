@@ -19,7 +19,7 @@ public class WebDriverFactory {
                 WebDriverManager.chromedriver().setup();
                 return new ChromeDriver();
             }
-            case "Opera": {
+            case "opera": {
                 WebDriverManager.operadriver().setup();
                 return new OperaDriver();
             }
