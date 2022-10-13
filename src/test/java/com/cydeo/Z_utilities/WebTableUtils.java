@@ -34,7 +34,14 @@ public class WebTableUtils {
 
         WebElement customerOrderDate =
                 driver.findElement(By.xpath("//td[.='" + customerName + "']/following-sibling::td[3]"));
+
         String actualOrderDate = customerOrderDate.getText();
+
         Assert.assertEquals(actualOrderDate, expectedOrderDate);
+
     }
+
+
+
 }
+

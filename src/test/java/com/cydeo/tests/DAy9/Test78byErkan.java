@@ -43,7 +43,7 @@ public class Test78byErkan {
 
     @AfterClass
     public void afterClass() {
-       driver.quit();
+        driver.quit();
     }
 
     @Test
