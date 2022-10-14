@@ -1,6 +1,7 @@
 package com.cydeo.tests.DAy9;
 
 import com.cydeo.Z_utilities.WebDriverFactory;
+import com.github.javafaker.Faker;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -13,10 +14,9 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 import java.util.concurrent.TimeUnit;
+import java.util.stream.Collectors;
 
 public class Test78byErkan {
 
@@ -69,5 +69,21 @@ public class Test78byErkan {
 //        for (WebElement eachfilter : filters) {
 //            System.out.println(eachfilter.getText());
 //        }
+    }
+
+
+    public static void main(String[] args) {
+//        System.out.println(fakerUsernameAndLastname(100));
+        System.out.println(fakerUsernameAndLastname(100).keySet().stream().filter(p->p.toLowerCase().startsWith("a")).collect(Collectors.toList()));
+    }
+
+    public static Map<String, String> fakerUsernameAndLastname(int num) {
+
+
+        Map<String, String> name = new HashMap<>();
+        for (int i = 0; i <= num; i++) {
+            name.put(new Faker().name().firstName(), new Faker().name().lastName());
+        }
+        return name;
     }
 }
