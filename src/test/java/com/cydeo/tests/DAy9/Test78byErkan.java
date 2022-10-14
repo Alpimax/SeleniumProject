@@ -48,23 +48,26 @@ public class Test78byErkan {
 
     @Test
     public void test1() throws InterruptedException {
-
-        WebElement customerMenu = driver.findElement(By.xpath(("(//a[@href='#'])[5]")));
-
-        WebElement accMenu = driver.findElement(By.xpath("//span[@class='title title-level-2'][normalize-space()='Accounts']"));
-
+        Thread.sleep(1000);
+        WebElement customerMenu = driver.findElement(By.xpath(("(//a[@class='unclickable'])[2]")));
+        Thread.sleep(1000);
+        WebElement accMenu = driver.findElement(By.xpath("(//a/span[@class='title title-level-2'])[7]"));
+        Thread.sleep(1000);
         //Mouse'in customer kismina gidip sonra accounts kismina gitmesi icin gerekli olan action.
         Actions actions = new Actions(driver);
-        actions.moveToElement(customerMenu).pause(2000).moveToElement(accMenu).click().perform();
+        Thread.sleep(1000);
+        actions.moveToElement(customerMenu).pause(3000).moveToElement(accMenu).click().perform();
 
-        WebElement filterButton = driver.findElement(By.xpath("//button/input[@type='checkbox']"));
-        filterButton.click();
-
-        List<WebElement> filters = driver.findElements(By.xpath("//div [contains(@class,'btn filter-criteria-selector')]"));
-
-        System.out.println(filters.size());
-        for (WebElement eachfilter : filters) {
-            System.out.println(eachfilter.getText());
-        }
+//        WebElement drop = driver.findElement(By.xpath("(//input[@type='checkbox'])[4]"));
+//        drop.click();
+//        WebElement filterButton = driver.findElement(By.xpath("//button/input[@type='checkbox']"));
+//        filterButton.click();
+//
+//        List<WebElement> filters = driver.findElements(By.xpath("//div [contains(@class,'btn filter-criteria-selector')]"));
+//
+//        System.out.println(filters.size());
+//        for (WebElement eachfilter : filters) {
+//            System.out.println(eachfilter.getText());
+//        }
     }
 }
