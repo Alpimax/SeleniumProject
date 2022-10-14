@@ -64,7 +64,7 @@ public class Test78byErkan {
 
         System.out.println(filters.size());
         for (WebElement eachfilter : filters) {
-            System.out.println(eachfilter);
+            System.out.println(eachfilter.getText());
         }
     }
 }

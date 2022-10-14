@@ -30,7 +30,7 @@ public class ConfigurationReader {
             file.close();
 
         } catch (IOException e) {
-            e.printStackTrace();
+            System.err.println(" Your configuration.properties did not open bro  !!!. Go back and check it before run code...");
         }
     }
 
