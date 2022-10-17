@@ -26,6 +26,7 @@ public class BrowserUtils {
     }
 
 
+
     //Method info:
     //• Name: verifyTitle()
     //• Return type: void
