@@ -72,6 +72,7 @@ public class Test78byErkan {
     }
 
 
+
     public static void main(String[] args) {
 //        System.out.println(fakerUsernameAndLastname(100));
         System.out.println(fakerUsernameAndLastname(100).keySet().stream().filter(p->p.toLowerCase().startsWith("a")).collect(Collectors.toList()));
