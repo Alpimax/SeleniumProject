@@ -22,6 +22,8 @@ public class BrowserUtils {
         }catch(InterruptedException e){
             e.printStackTrace();
             System.out.println("Exception happened in sleep method!");
+
+
         }
     }
 
