@@ -72,18 +72,18 @@ public class Test78byErkan {
     }
 
 
-
     public static void main(String[] args) {
 //        System.out.println(fakerUsernameAndLastname(100));
-        System.out.println(fakerUsernameAndLastname(100).keySet().stream().filter(p->p.toLowerCase().startsWith("a")).collect(Collectors.toList()));
+        System.out.println(fakerUsernameAndLastname(100));
     }
 
     public static Map<String, String> fakerUsernameAndLastname(int num) {
 
 
         Map<String, String> name = new HashMap<>();
+
         for (int i = 0; i <= num; i++) {
-            name.put(new Faker().name().firstName(), new Faker().name().lastName());
+            name.put(new Faker().internet().password(),"");
         }
         return name;
     }

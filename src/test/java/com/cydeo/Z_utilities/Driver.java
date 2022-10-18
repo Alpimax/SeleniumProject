@@ -9,6 +9,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.safari.SafariDriver;
 
+import java.awt.*;
 import java.util.concurrent.TimeUnit;
 
 public class Driver {
@@ -79,6 +80,5 @@ public class Driver {
             driver = null;
         }
     }
-
 }
 
