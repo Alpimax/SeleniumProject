@@ -1,4 +1,4 @@
-package com.cydeo.tests;
+package com.cydeo.tests.Day12;
 
 import com.cydeo.Z_utilities.BrowserUtils;
 import com.cydeo.Z_utilities.Driver;
