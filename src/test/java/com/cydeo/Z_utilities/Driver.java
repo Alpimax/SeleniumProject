@@ -45,7 +45,7 @@ public class Driver {
                     WebDriverManager.chromedriver().setup();
                     return new ChromeDriver();
 
-                case "chrome2":
+                case "chromeHeadLess":
                     WebDriverManager.chromedriver().setup();
                     return new ChromeDriver(new ChromeOptions().setHeadless(true));
 
@@ -53,7 +53,7 @@ public class Driver {
                     WebDriverManager.firefoxdriver().setup();
                     return new FirefoxDriver();
 
-                case "firefox2":
+                case "firefoxHeadLess":
                     WebDriverManager.firefoxdriver().setup();
                     return new FirefoxDriver(new FirefoxOptions().setHeadless(true));
 
