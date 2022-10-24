@@ -8,18 +8,19 @@ import org.testng.annotations.Test;
 public class HomeWork {
 
     @Test
-    public void urlVerification(){
+    public void urlVerification() {
         Driver.getDriver().navigate().to("https://practice.cydeo.com");
         String actualUrl = Driver.getDriver().getCurrentUrl();
         Assert.assertTrue(actualUrl.contains("cydeo"));
 
         String actualTitle = Driver.getDriver().getTitle();
         String expectedTitle = "Practice";
-        Assert.assertEquals(actualTitle,expectedTitle);
+        Assert.assertEquals(actualTitle, expectedTitle);
     }
 
     @Test
-    public void etsy_title(){
+    public void etsy_title() {
+        Driver.getDriver().get("https://www.etsy.com");
 
     }
 }
