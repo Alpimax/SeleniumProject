@@ -12,5 +12,14 @@ public class HomeWork {
         Driver.getDriver().navigate().to("https://practice.cydeo.com");
         String actualUrl = Driver.getDriver().getCurrentUrl();
         Assert.assertTrue(actualUrl.contains("cydeo"));
+
+        String actualTitle = Driver.getDriver().getTitle();
+        String expectedTitle = "Practice";
+        Assert.assertEquals(actualTitle,expectedTitle);
+    }
+
+    @Test
+    public void etsy_title(){
+
     }
 }
