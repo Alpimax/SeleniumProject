@@ -11,6 +11,7 @@ public class HomeWork {
     public void urlVerification() {
         Driver.getDriver().navigate().to("https://practice.cydeo.com");
         String actualUrl = Driver.getDriver().getCurrentUrl();
+        System.out.println(actualUrl);
         Assert.assertTrue(actualUrl.contains("cydeo"));
 
         String actualTitle = Driver.getDriver().getTitle();
